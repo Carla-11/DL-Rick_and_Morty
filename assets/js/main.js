@@ -46,14 +46,16 @@ let llamadoPersonajes = (() => {
            resultados.innerHTML += `
            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
            <img src="${element.image}" type="button" data-toggle="modal" data-target="" alt="">
-           <div id="char-${element.id}" class="d-inline-block">
-             
-           
+           <div id="char-${element.name}" class="d-inline-block">
+             <h4>${element.name}</h4>
+             <h4>${element.status}</h4>
+          
            
            </div>
 
            </div>`;
-           
+
+           console.log(element);
        });
 
 
